@@ -1,4 +1,3 @@
-
 import pygame
 import socket
 # 初始化所有导入的pygame模块
@@ -67,7 +66,7 @@ try:
                 #MoveToStart
                 if event.button ==6:
                     tcp.sendpose('MoveToStart')
-                print(f"Joystick {event.joy}, button {event.button}, down {event.type == pygame.JOYBUTTONDOWN}")
+                #print(f"Joystick {event.joy}, button {event.button}, down {event.type == pygame.JOYBUTTONDOWN}")
 except KeyboardInterrupt:
     print("Exiting...")
 finally:

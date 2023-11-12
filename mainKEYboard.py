@@ -55,7 +55,7 @@ def key_callback(e):
         if e.name == "l":
             tcp.sendpose('MoveToStart')
 
-tcp=Tcp_client("192.168.31.122", 8080)
+tcp=Tcp_client("127.0.0.1", 8080)
 print("开始监听键盘输入...")
 keyboard.hook(key_callback)
 keyboard.wait('esc')
